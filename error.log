@@ -1,0 +1,1232 @@
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:17:53] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:17:53] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:17:59] "GET /task/create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:18:01] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:18:02] "GET /home HTTP/1.1" 200 -
+ERROR:flask.app:Exception on /logout [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/muhammadoginh/Documents/PROJECT/UxSAFE/uxsafeweb/app/layout/routes.py", line 9, in route_template
+    return render_template(template + '.html')
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: logout.html
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:18:08] "GET /logout HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:19:54] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:19:55] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:21:08] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:21:22] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:21:28] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:23:30] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:23:33] "GET /task/create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:23:51] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:23:54] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:24:08] "GET /task/create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:25:06] "GET /task/create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:25:06] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:26:17] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:26:30] "POST /login HTTP/1.1" 405 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:26:38] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:26:41] "GET /task/create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:26:48] "GET /task/create_user?last-name=gdg&middle-name=gd&middle-name=gd&middle-name=gdg HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:27:33] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:27:39] "POST /login HTTP/1.1" 405 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:29:57] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:29:57] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:30:02] "GET /login?username=dgdg&password=gdag HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:30:27] "GET /login?username=dgdg&password=gdag HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:30:27] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:31:33] "GET /login?username=dgdg&password=gdag HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:31:34] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:31:42] "GET /login?username=df&password=gd HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:33:42] "GET /login?username=s&password=gdg HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:35:10] "GET /login?username=s&password=gdg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:35:10] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:35:16] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:35:28] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:35:36] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:35:41] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:35:44] "GET /task/create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:35:47] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:35:51] "GET /task/create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:35:53] "GET /task/create_hsse_moment HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:35:56] "GET /task/create_hsse_today HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 08:35:59] "GET /task/create_quiz HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 19:59:32] "GET /task/create_hsse_today HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 19:59:32] "GET /static/vendors/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 19:59:32] "GET /static/vendors/bootstrap-daterangepicker/daterangepicker.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 19:59:32] "GET /static/vendors/nprogress/nprogress.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 19:59:32] "GET /static/vendors/iCheck/skins/flat/green.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 19:59:32] "GET /static/vendors/bootstrap/dist/css/bootstrap.min.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 19:59:32] "GET /static/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 19:59:32] "GET /static/vendors/jqvmap/dist/jqvmap.min.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 19:59:32] "GET /static/vendors/jquery/dist/jquery.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 19:59:32] "GET /static/build/css/custom.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 19:59:32] "GET /static/vendors/bootstrap/dist/js/bootstrap.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 19:59:32] "GET /static/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 19:59:32] "GET /static/vendors/nprogress/nprogress.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 19:59:32] "GET /static/vendors/iCheck/icheck.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 19:59:32] "GET /static/vendors/fastclick/lib/fastclick.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 19:59:32] "GET /static/vendors/moment/min/moment.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 19:59:32] "GET /static/vendors/bootstrap-daterangepicker/daterangepicker.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 19:59:32] "GET /static/vendors/jquery.hotkeys/jquery.hotkeys.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 19:59:32] "GET /static/vendors/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 19:59:32] "GET /static/vendors/jquery.tagsinput/src/jquery.tagsinput.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 19:59:32] "GET /static/vendors/google-code-prettify/src/prettify.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 19:59:32] "GET /static/vendors/select2/dist/js/select2.full.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 19:59:32] "GET /static/vendors/switchery/dist/switchery.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 19:59:32] "GET /static/vendors/autosize/dist/autosize.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 19:59:32] "GET /static/vendors/devbridge-autocomplete/dist/jquery.autocomplete.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 19:59:32] "GET /static/vendors/starrr/dist/starrr.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 19:59:32] "GET /static/vendors/validator/validator.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 19:59:32] "GET /static/images/user.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 19:59:32] "GET /static/build/js/custom.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 19:59:32] "GET /static/images/img.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 19:59:32] "GET /static/vendors/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 19:59:33] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:01:05] "GET /task/create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:01:10] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:01:10] "GET /static/images/picture.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:01:10] "GET /static/vendors/skycons/skycons.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:01:10] "GET /static/vendors/Chart.js/dist/Chart.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:01:10] "GET /static/vendors/Flot/jquery.flot.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:01:10] "GET /static/vendors/Flot/jquery.flot.pie.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:01:10] "GET /static/vendors/Flot/jquery.flot.time.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:01:10] "GET /static/vendors/Flot/jquery.flot.stack.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:01:10] "GET /static/vendors/gauge.js/dist/gauge.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:01:10] "GET /static/vendors/Flot/jquery.flot.resize.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:01:10] "GET /static/vendors/flot.orderbars/js/jquery.flot.orderBars.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:01:10] "GET /static/vendors/flot-spline/js/jquery.flot.spline.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:01:10] "GET /static/vendors/DateJS/build/date.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:01:10] "GET /static/vendors/flot.curvedlines/curvedLines.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:01:10] "GET /static/vendors/jqvmap/dist/jquery.vmap.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:01:10] "GET /static/vendors/jqvmap/examples/js/jquery.vmap.sampledata.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:01:10] "GET /static/vendors/jqvmap/dist/maps/jquery.vmap.world.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:01:21] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:10:21] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:10:21] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:11:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:11:04] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:11:04] "GET /static/vendors/animate.css/animate.min.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:11:04] "GET /static/vendors/alertifyjs/css/custom.alertify.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:11:04] "GET /static/vendors/alertifyjs/css/alertify.min.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:11:04] "GET /static/vendors/alertifyjs/alertify.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:11:04] "GET /static/vendors/parsleyjs/dist/parsley.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:11:04] "GET /static/build/js/login.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:11:16] "GET /login?username=admin&password=admin HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:14:07] "GET /login?username=admin&password=admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:14:07] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:14:08] "GET /login?username=admin&password=admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:14:08] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:14:10] "GET /login?username=admin&password=admin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:14:10] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:14:12] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:14:28] "POST /login HTTP/1.1" 405 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:15:37] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:15:48] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:flask.app:Exception on /login [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/muhammadoginh/Documents/PROJECT/UxSAFE/uxsafeweb/app/login/routes.py", line 10, in route_template
+    return render_template(template + '.html', data)
+TypeError: render_template() takes 1 positional argument but 2 were given
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:19:06] "POST /login HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:26:33] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:26:33] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:26:41] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:26:52] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:28:50] "POST /api/login HTTP/1.1" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:35:13] "GET /login HTTP/1.1" 200 -
+ERROR:flask.app:Exception on /login [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/muhammadoginh/Documents/PROJECT/UxSAFE/uxsafeweb/app/login/routes.py", line 14, in route_template
+    content = urlopen("localhost:3000/api/users").read()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/urllib/request.py", line 525, in open
+    response = self._open(req, data)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/urllib/request.py", line 548, in _open
+    'unknown_open', req)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/urllib/request.py", line 503, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/urllib/request.py", line 1387, in unknown_open
+    raise URLError('unknown url type: %s' % type)
+urllib.error.URLError: <urlopen error unknown url type: localhost>
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:35:21] "POST /login HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:39:12] "GET /login HTTP/1.1" 200 -
+ERROR:flask.app:Exception on /login [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/muhammadoginh/Documents/PROJECT/UxSAFE/uxsafeweb/app/login/routes.py", line 14, in route_template
+    content = urlopen("localhost:3000/api/users").read()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/urllib/request.py", line 525, in open
+    response = self._open(req, data)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/urllib/request.py", line 548, in _open
+    'unknown_open', req)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/urllib/request.py", line 503, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/urllib/request.py", line 1387, in unknown_open
+    raise URLError('unknown url type: %s' % type)
+urllib.error.URLError: <urlopen error unknown url type: localhost>
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:39:18] "POST /login HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:39:45] "GET /login HTTP/1.1" 200 -
+ERROR:flask.app:Exception on /login [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/muhammadoginh/Documents/PROJECT/UxSAFE/uxsafeweb/app/login/routes.py", line 14, in route_template
+    content = urlopen("localhost:3000/api/users").read()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/urllib/request.py", line 525, in open
+    response = self._open(req, data)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/urllib/request.py", line 548, in _open
+    'unknown_open', req)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/urllib/request.py", line 503, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/urllib/request.py", line 1387, in unknown_open
+    raise URLError('unknown url type: %s' % type)
+urllib.error.URLError: <urlopen error unknown url type: localhost>
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:39:49] "POST /login HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:48:49] "GET /login HTTP/1.1" 200 -
+ERROR:flask.app:Exception on /login [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/muhammadoginh/Documents/PROJECT/UxSAFE/uxsafeweb/app/login/routes.py", line 14, in route_template
+    content = requests.GET("localhost:3000/api/users")
+AttributeError: module 'requests' has no attribute 'GET'
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:49:00] "POST /login HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:49:18] "GET /login HTTP/1.1" 200 -
+ERROR:flask.app:Exception on /login [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/muhammadoginh/Documents/PROJECT/UxSAFE/uxsafeweb/app/login/routes.py", line 14, in route_template
+    content = requests.get("localhost:3000/api/users")
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/requests/sessions.py", line 640, in send
+    adapter = self.get_adapter(url=request.url)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/requests/sessions.py", line 731, in get_adapter
+    raise InvalidSchema("No connection adapters were found for '%s'" % url)
+requests.exceptions.InvalidSchema: No connection adapters were found for 'localhost:3000/api/users'
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:49:24] "POST /login HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:51:12] "GET /login HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:3000
+DEBUG:urllib3.connectionpool:http://localhost:3000 "GET /api/users HTTP/1.1" 200 181
+ERROR:flask.app:Exception on /login [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/muhammadoginh/Documents/PROJECT/UxSAFE/uxsafeweb/app/login/routes.py", line 20, in route_template
+    <h1>{}</h1>'''.format(username, password, hehe.success)
+AttributeError: 'dict' object has no attribute 'success'
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:51:18] "POST /login HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:53:01] "GET /login HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:3000
+DEBUG:urllib3.connectionpool:http://localhost:3000 "GET /api/users HTTP/1.1" 200 181
+ERROR:flask.app:Exception on /login [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/muhammadoginh/Documents/PROJECT/UxSAFE/uxsafeweb/app/login/routes.py", line 20, in route_template
+    <h1>{}</h1>'''.format(username, password, hehe.success)
+AttributeError: 'dict' object has no attribute 'success'
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:53:07] "POST /login HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:53:53] "GET /login HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:3000
+DEBUG:urllib3.connectionpool:http://localhost:3000 "GET /api/users HTTP/1.1" 200 181
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:54:23] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:55:04] "GET /login HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:3000
+DEBUG:urllib3.connectionpool:http://localhost:3000 "GET /api/users HTTP/1.1" 200 181
+ERROR:flask.app:Exception on /login [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/muhammadoginh/Documents/PROJECT/UxSAFE/uxsafeweb/app/login/routes.py", line 20, in route_template
+    <h1>{}</h1>'''.format(username, password, hehe[success])
+NameError: name 'success' is not defined
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:55:08] "POST /login HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:55:29] "GET /login HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:3000
+DEBUG:urllib3.connectionpool:http://localhost:3000 "GET /api/users HTTP/1.1" 200 181
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:55:33] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:56:04] "GET /login HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:3000
+DEBUG:urllib3.connectionpool:http://localhost:3000 "GET /api/users HTTP/1.1" 200 181
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:56:09] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:56:26] "GET /login HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:3000
+DEBUG:urllib3.connectionpool:http://localhost:3000 "GET /api/users HTTP/1.1" 200 181
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:56:29] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:57:26] "GET /login HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:3000
+DEBUG:urllib3.connectionpool:http://localhost:3000 "GET /api/users HTTP/1.1" 200 181
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:57:30] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:58:03] "GET /login HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:3000
+DEBUG:urllib3.connectionpool:http://localhost:3000 "GET /api/users HTTP/1.1" 200 181
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:58:09] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:58:54] "GET /login HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:3000
+DEBUG:urllib3.connectionpool:http://localhost:3000 "GET /api/users HTTP/1.1" 200 181
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 20:58:58] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:03:21] "GET /login HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:3000
+DEBUG:urllib3.connectionpool:http://localhost:3000 "POST /api/users HTTP/1.1" 404 149
+ERROR:flask.app:Exception on /login [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/muhammadoginh/Documents/PROJECT/UxSAFE/uxsafeweb/app/login/routes.py", line 19, in route_template
+    hehe = content.json()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/requests/models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:03:26] "POST /login HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:04:19] "GET /login HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:3000
+DEBUG:urllib3.connectionpool:http://localhost:3000 "POST /api/login HTTP/1.1" 404 51
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:04:22] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:04:26] "GET /login HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:3000
+DEBUG:urllib3.connectionpool:http://localhost:3000 "POST /api/login HTTP/1.1" 200 73
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:04:32] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:06:45] "GET /login HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:3000
+DEBUG:urllib3.connectionpool:http://localhost:3000 "POST /api/login HTTP/1.1" 404 51
+ERROR:flask.app:Exception on /login [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/muhammadoginh/Documents/PROJECT/UxSAFE/uxsafeweb/app/login/routes.py", line 24, in route_template
+    <h1>{}</h1>'''.format(username, password, user['role'])
+KeyError: 'role'
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:06:49] "POST /login HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:07:41] "GET /login HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:3000
+DEBUG:urllib3.connectionpool:http://localhost:3000 "POST /api/login HTTP/1.1" 404 51
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:07:44] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:07:46] "GET /login HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:3000
+DEBUG:urllib3.connectionpool:http://localhost:3000 "POST /api/login HTTP/1.1" 200 73
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:07:50] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:07:58] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:24:17] "GET /login HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:3000
+DEBUG:urllib3.connectionpool:http://localhost:3000 "POST /api/login HTTP/1.1" 404 51
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:24:20] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:24:22] "GET /login HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:3000
+DEBUG:urllib3.connectionpool:http://localhost:3000 "POST /api/login HTTP/1.1" 200 73
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:24:32] "POST /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:24:32] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:31:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:31:16] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:31:16] "GET /home HTTP/1.1" 200 -
+ERROR:flask.app:Exception on /logout [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/muhammadoginh/Documents/PROJECT/UxSAFE/uxsafeweb/app/layout/routes.py", line 9, in route_template
+    return render_template(template + '.html')
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: logout.html
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:31:27] "GET /logout HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:31:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:31:34] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:31:34] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:33:08] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:33:08] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+ERROR:flask.app:Exception on /logout [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 257, in decorated_view
+    elif current_app.login_manager._login_disabled:
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/werkzeug/local.py", line 348, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'Flask' object has no attribute 'login_manager'
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:33:11] "GET /logout HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:35:40] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:35:40] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:35:43] "GET /logout HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:39:25] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:39:28] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:39:28] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:39:39] "GET /task/create_user HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:48:38] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:48:38] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:48:44] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:48:44] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:48:50] "GET /logout HTTP/1.1" 401 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:50:28] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:50:28] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:50:30] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:50:30] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:50:30] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:50:35] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:50:35] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:50:36] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:50:52] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [10/Jun/2019 21:50:52] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:04:25] "GET /task/create_user HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:04:25] "GET /static/vendors/bootstrap/dist/css/bootstrap.min.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:04:25] "GET /static/vendors/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:04:25] "GET /static/vendors/nprogress/nprogress.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:04:25] "GET /static/vendors/bootstrap-daterangepicker/daterangepicker.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:04:25] "GET /static/vendors/jqvmap/dist/jqvmap.min.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:04:25] "GET /static/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:04:25] "GET /static/vendors/iCheck/skins/flat/green.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:04:25] "GET /static/vendors/jquery/dist/jquery.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:04:25] "GET /static/build/css/custom.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:04:25] "GET /static/vendors/bootstrap/dist/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:04:25] "GET /static/vendors/fastclick/lib/fastclick.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:04:25] "GET /static/vendors/nprogress/nprogress.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:04:25] "GET /static/vendors/moment/min/moment.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:04:25] "GET /static/vendors/iCheck/icheck.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:04:25] "GET /static/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:04:25] "GET /static/vendors/bootstrap-daterangepicker/daterangepicker.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:04:25] "GET /static/vendors/jquery.hotkeys/jquery.hotkeys.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:04:25] "GET /static/vendors/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:04:25] "GET /static/vendors/google-code-prettify/src/prettify.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:04:25] "GET /static/vendors/jquery.tagsinput/src/jquery.tagsinput.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:04:25] "GET /static/vendors/switchery/dist/switchery.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:04:25] "GET /static/vendors/autosize/dist/autosize.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:04:25] "GET /static/vendors/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:04:25] "GET /static/vendors/select2/dist/js/select2.full.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:04:25] "GET /static/vendors/devbridge-autocomplete/dist/jquery.autocomplete.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:04:25] "GET /static/vendors/parsleyjs/dist/parsley.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:04:25] "GET /static/vendors/starrr/dist/starrr.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:04:25] "GET /static/images/user.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:04:25] "GET /static/images/img.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:04:25] "GET /static/build/js/custom.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:04:30] "GET /task/create_quiz HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:04:30] "GET /static/vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:05:08] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:05:08] "GET /static/vendors/Chart.js/dist/Chart.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:05:08] "GET /static/images/picture.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:05:08] "GET /static/vendors/gauge.js/dist/gauge.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:05:08] "GET /static/vendors/skycons/skycons.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:05:08] "GET /static/vendors/Flot/jquery.flot.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:05:08] "GET /static/vendors/Flot/jquery.flot.pie.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:05:08] "GET /static/vendors/Flot/jquery.flot.time.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:05:08] "GET /static/vendors/Flot/jquery.flot.stack.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:05:08] "GET /static/vendors/flot.orderbars/js/jquery.flot.orderBars.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:05:08] "GET /static/vendors/Flot/jquery.flot.resize.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:05:08] "GET /static/vendors/flot-spline/js/jquery.flot.spline.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:05:08] "GET /static/vendors/flot.curvedlines/curvedLines.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:05:08] "GET /static/vendors/DateJS/build/date.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:05:08] "GET /static/vendors/jqvmap/dist/jquery.vmap.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:05:08] "GET /static/vendors/jqvmap/examples/js/jquery.vmap.sampledata.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:05:08] "GET /static/vendors/jqvmap/dist/maps/jquery.vmap.world.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:28:33] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:28:33] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:28:33] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:28:41] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:28:41] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:28:43] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:29:15] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:29:15] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:29:15] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:29:26] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:29:26] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:29:28] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:29:28] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:29:28] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:29:31] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:29:31] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:29:31] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:29:45] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:29:45] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:29:45] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:30:18] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:30:18] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:30:20] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:30:20] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:30:20] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:30:28] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:30:28] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:30:28] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:30:33] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:30:33] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:30:33] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:30:34] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:31:49] "GET /home HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:31:54] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 15:31:54] "GET /home HTTP/1.1" 401 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:flask.app:Exception on /home [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 260, in decorated_view
+    return current_app.login_manager.unauthorized()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/login_manager.py", line 152, in unauthorized
+    return self.unauthorized_callback()
+  File "/Users/muhammadoginh/Documents/PROJECT/UxSAFE/uxsafeweb/app/error/routes.py", line 8, in unauthorized_handler
+    return render_template('page_403.html'), 403
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/muhammadoginh/Documents/PROJECT/UxSAFE/uxsafeweb/app/error/templates/page_403.html", line 1, in top-level template code
+    {% extends "base_site.html" %}
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: base_site.html
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:35:25] "GET /home HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:35:50] "GET /home HTTP/1.1" 403 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:35:50] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:flask.app:Exception on /home [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 260, in decorated_view
+    return current_app.login_manager.unauthorized()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/login_manager.py", line 152, in unauthorized
+    return self.unauthorized_callback()
+  File "/Users/muhammadoginh/Documents/PROJECT/UxSAFE/uxsafeweb/app/error/routes.py", line 8, in unauthorized_handler
+    return render_template('page_403.html'), 401
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: page_403.html
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:36:56] "GET /home HTTP/1.1" 500 -
+ERROR:flask.app:Exception on /home [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 260, in decorated_view
+    return current_app.login_manager.unauthorized()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/login_manager.py", line 152, in unauthorized
+    return self.unauthorized_callback()
+  File "/Users/muhammadoginh/Documents/PROJECT/UxSAFE/uxsafeweb/app/error/routes.py", line 8, in unauthorized_handler
+    return render_template('page_401.html'), 401
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: page_403.html
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:37:14] "GET /home HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:37:31] "GET /home HTTP/1.1" 401 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:38:31] "GET /home HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:38:32] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:38:34] "GET /home HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:38:35] "GET /home HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:40:34] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:40:34] "GET /home HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:40:35] "GET /home HTTP/1.1" 401 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:43:22] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:43:22] "GET /home HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:43:29] "GET /home HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:43:36] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:43:37] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:43:37] "GET /home HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:43:37] "GET /home HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:43:41] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:43:52] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:43:52] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:43:52] "GET /home HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:44:02] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:44:02] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:44:03] "GET /home HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:44:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:44:59] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:44:59] "GET /home HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:45:09] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:45:09] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:45:09] "GET /home HTTP/1.1" 401 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:48:35] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:48:35] "GET /home HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:48:36] "GET /logout HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:48:39] "GET /logout HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:48:39] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:48:40] "GET /logout HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:48:40] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:48:40] "GET /logout HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:48:40] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:48:41] "GET /logout HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:48:41] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:48:41] "GET /logout HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:48:41] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:48:43] "GET /logout HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:48:43] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Jun/2019 16:49:28] "GET /home HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:39:23] "GET /home HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:39:23] "GET /static/vendors/bootstrap/dist/css/bootstrap.min.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:39:23] "GET /static/vendors/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:39:23] "GET /static/vendors/nprogress/nprogress.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:39:23] "GET /static/vendors/bootstrap-daterangepicker/daterangepicker.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:39:23] "GET /static/vendors/iCheck/skins/flat/green.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:39:23] "GET /static/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:39:23] "GET /static/vendors/bootstrap/dist/js/bootstrap.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:39:23] "GET /static/build/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:39:23] "GET /static/vendors/jqvmap/dist/jqvmap.min.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:39:23] "GET /static/vendors/fastclick/lib/fastclick.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:39:23] "GET /static/vendors/jquery/dist/jquery.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:39:23] "GET /static/vendors/nprogress/nprogress.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:39:23] "GET /static/vendors/moment/min/moment.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:39:23] "GET /static/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:39:23] "GET /static/vendors/iCheck/icheck.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:39:23] "GET /static/vendors/bootstrap-daterangepicker/daterangepicker.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:39:23] "GET /static/vendors/jquery.hotkeys/jquery.hotkeys.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:39:23] "GET /static/vendors/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:39:23] "GET /static/vendors/google-code-prettify/src/prettify.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:39:23] "GET /static/vendors/jquery.tagsinput/src/jquery.tagsinput.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:39:23] "GET /static/vendors/switchery/dist/switchery.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:39:23] "GET /static/vendors/select2/dist/js/select2.full.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:39:23] "GET /static/vendors/autosize/dist/autosize.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:39:23] "GET /static/vendors/devbridge-autocomplete/dist/jquery.autocomplete.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:39:23] "GET /static/vendors/starrr/dist/starrr.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:39:23] "GET /static/build/js/custom.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:39:23] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:39:50] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:39:50] "GET /home HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:39:50] "GET /home HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:40:33] "GET /logout HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:40:34] "GET /logout HTTP/1.1" 401 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:40:48] "GET /logout HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:40:59] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:40:59] "GET /home HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:43:30] "GET /home HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:43:34] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:43:34] "GET /home HTTP/1.1" 401 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:44:05] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:44:05] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:44:05] "GET /static/images/img.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:44:05] "GET /static/images/user.png HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:44:05] "GET /static/vendors/Chart.js/dist/Chart.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:44:05] "GET /static/vendors/gauge.js/dist/gauge.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:44:05] "GET /static/vendors/skycons/skycons.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:44:05] "GET /static/vendors/Flot/jquery.flot.pie.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:44:05] "GET /static/vendors/Flot/jquery.flot.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:44:05] "GET /static/vendors/Flot/jquery.flot.time.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:44:05] "GET /static/vendors/Flot/jquery.flot.stack.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:44:05] "GET /static/vendors/Flot/jquery.flot.resize.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:44:05] "GET /static/vendors/flot.orderbars/js/jquery.flot.orderBars.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:44:05] "GET /static/vendors/flot-spline/js/jquery.flot.spline.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:44:05] "GET /static/vendors/flot.curvedlines/curvedLines.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:44:05] "GET /static/vendors/jqvmap/dist/maps/jquery.vmap.world.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:44:05] "GET /static/vendors/DateJS/build/date.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:44:05] "GET /static/vendors/jqvmap/dist/jquery.vmap.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:44:05] "GET /static/vendors/jqvmap/examples/js/jquery.vmap.sampledata.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:44:05] "GET /static/images/picture.jpg HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:44:05] "GET /static/vendors/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:45:59] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:45:59] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:46:12] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:46:12] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:46:34] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:46:34] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:46:36] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:46:36] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:46:36] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:47:35] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:47:35] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+ERROR:flask.app:Exception on /logout [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/muhammadoginh/Documents/PROJECT/UxSAFE/uxsafeweb/app/login/routes.py", line 41, in logout
+    logout_user(current_user)
+TypeError: logout_user() takes 0 positional arguments but 1 was given
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:47:37] "GET /logout HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:51:41] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:51:41] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:51:41] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:53:06] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:53:06] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:53:06] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:55:43] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:55:43] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:55:43] "GET /static/vendors/animate.css/animate.min.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:55:43] "GET /static/vendors/alertifyjs/css/custom.alertify.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:55:43] "GET /static/vendors/parsleyjs/dist/parsley.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:55:43] "GET /static/vendors/alertifyjs/css/alertify.min.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:55:43] "GET /static/vendors/alertifyjs/alertify.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:55:43] "GET /static/build/js/login.js HTTP/1.1" 304 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:3000
+DEBUG:urllib3.connectionpool:http://localhost:3000 "POST /api/login HTTP/1.1" 404 51
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:55:56] "POST /login HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:3000
+DEBUG:urllib3.connectionpool:http://localhost:3000 "POST /api/login HTTP/1.1" 404 51
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:56:21] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:3000
+DEBUG:urllib3.connectionpool:http://localhost:3000 "POST /api/login HTTP/1.1" 404 51
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:56:58] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:56:58] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:3000
+DEBUG:urllib3.connectionpool:http://localhost:3000 "POST /api/login HTTP/1.1" 404 51
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:57:10] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:3000
+DEBUG:urllib3.connectionpool:http://localhost:3000 "POST /api/login HTTP/1.1" 404 51
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:58:55] "POST /login HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:3000
+DEBUG:urllib3.connectionpool:http://localhost:3000 "POST /api/login HTTP/1.1" 404 51
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 13:59:23] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:3000
+DEBUG:urllib3.connectionpool:http://localhost:3000 "POST /api/login HTTP/1.1" 404 51
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 14:05:00] "POST /login HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:3000
+DEBUG:urllib3.connectionpool:http://localhost:3000 "POST /api/login HTTP/1.1" 404 51
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 14:05:14] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 14:05:41] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 14:05:41] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 14:06:27] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 14:06:27] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 14:06:40] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 14:06:40] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 14:06:40] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 14:06:43] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 14:06:43] "GET /login HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 14:06:43] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 14:07:46] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 14:07:46] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 14:07:48] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 14:07:48] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 14:08:05] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 14:08:26] "GET /home HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 14:08:30] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 14:08:32] "GET /logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 14:08:32] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 14:08:56] "GET /home HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 14:08:56] "GET /home HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 14:09:09] "GET /logout HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 14:09:14] "GET /logout HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 14:09:25] "GET /login HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:3000
+DEBUG:urllib3.connectionpool:http://localhost:3000 "POST /api/login HTTP/1.1" 404 51
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 14:09:35] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 14:10:01] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 14:10:05] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 14:10:05] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 14:10:06] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 14:10:06] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 14:10:08] "GET /login HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:3000
+DEBUG:urllib3.connectionpool:http://localhost:3000 "POST /api/login HTTP/1.1" 200 73
+ERROR:flask.app:Exception on /login [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/muhammadoginh/Documents/PROJECT/UxSAFE/uxsafeweb/app/login/routes.py", line 30, in login
+    login_user(user)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 158, in login_user
+    if not force and not user.is_active:
+AttributeError: 'dict' object has no attribute 'is_active'
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 14:10:14] "POST /login HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 14:10:53] "GET /login HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:3000
+DEBUG:urllib3.connectionpool:http://localhost:3000 "POST /api/login HTTP/1.1" 200 73
+ERROR:flask.app:Exception on /login [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/muhammadoginh/Documents/PROJECT/UxSAFE/uxsafeweb/app/login/routes.py", line 30, in login
+    login_user(user)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 158, in login_user
+    if not force and not user.is_active:
+AttributeError: 'dict' object has no attribute 'is_active'
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 14:11:14] "POST /login HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 15:02:39] "GET /login HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:3000
+DEBUG:urllib3.connectionpool:http://localhost:3000 "POST /api/login HTTP/1.1" 404 51
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 15:02:44] "POST /login HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:3000
+DEBUG:urllib3.connectionpool:http://localhost:3000 "POST /api/login HTTP/1.1" 404 51
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 15:02:54] "POST /login HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:3000
+DEBUG:urllib3.connectionpool:http://localhost:3000 "POST /api/login HTTP/1.1" 200 173
+ERROR:flask.app:Exception on /login [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/muhammadoginh/Documents/PROJECT/UxSAFE/uxsafeweb/app/login/routes.py", line 31, in login
+    login_user(user['user'])
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 158, in login_user
+    if not force and not user.is_active:
+AttributeError: 'dict' object has no attribute 'is_active'
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 15:03:26] "POST /login HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 15:04:07] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 15:04:49] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 15:04:49] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 15:04:58] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 15:05:49] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 15:05:49] "GET /static/images/favicon.ico HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:3000
+DEBUG:urllib3.connectionpool:http://localhost:3000 "POST /api/login HTTP/1.1" 200 173
+ERROR:flask.app:Exception on /login [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/muhammadoginh/Documents/PROJECT/UxSAFE/uxsafeweb/app/login/routes.py", line 32, in login
+    login_user(user['user'])
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 158, in login_user
+    if not force and not user.is_active:
+AttributeError: 'dict' object has no attribute 'is_active'
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 15:05:57] "POST /login HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 15:06:36] "GET /login HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:3000
+DEBUG:urllib3.connectionpool:http://localhost:3000 "POST /api/login HTTP/1.1" 200 173
+ERROR:flask.app:Exception on /login [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/muhammadoginh/Documents/PROJECT/UxSAFE/uxsafeweb/app/login/routes.py", line 33, in login
+    login_user(user['user'])
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask_login/utils.py", line 158, in login_user
+    if not force and not user.is_active:
+AttributeError: 'dict' object has no attribute 'is_active'
+INFO:werkzeug:127.0.0.1 - - [16/Jun/2019 15:06:45] "POST /login HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2019 13:37:35] "GET /home HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2019 13:37:35] "GET /home HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2019 13:40:52] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2019 13:40:52] "GET /static/vendors/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2019 13:40:52] "GET /static/vendors/bootstrap/dist/css/bootstrap.min.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2019 13:40:52] "GET /static/vendors/nprogress/nprogress.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2019 13:40:52] "GET /static/vendors/bootstrap-daterangepicker/daterangepicker.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2019 13:40:52] "GET /static/vendors/iCheck/skins/flat/green.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2019 13:40:52] "GET /static/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2019 13:40:52] "GET /static/vendors/animate.css/animate.min.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2019 13:40:52] "GET /static/vendors/jqvmap/dist/jqvmap.min.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2019 13:40:52] "GET /static/vendors/alertifyjs/css/alertify.min.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2019 13:40:52] "GET /static/build/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2019 13:40:52] "GET /static/vendors/alertifyjs/css/custom.alertify.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2019 13:40:52] "GET /static/vendors/jquery/dist/jquery.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2019 13:40:52] "GET /static/vendors/alertifyjs/alertify.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2019 13:40:52] "GET /static/build/js/login.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2019 13:40:52] "GET /static/vendors/parsleyjs/dist/parsley.min.js HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:3000
+DEBUG:urllib3.connectionpool:http://localhost:3000 "POST /api/login HTTP/1.1" 404 51
+INFO:werkzeug:127.0.0.1 - - [19/Jun/2019 13:41:18] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:05:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:05:01] "GET /static/vendors/bootstrap/dist/css/bootstrap.min.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:05:01] "GET /static/vendors/nprogress/nprogress.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:05:01] "GET /static/vendors/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:05:01] "GET /static/vendors/bootstrap-daterangepicker/daterangepicker.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:05:01] "GET /static/vendors/iCheck/skins/flat/green.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:05:01] "GET /static/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:05:01] "GET /static/build/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:05:01] "GET /static/vendors/jqvmap/dist/jqvmap.min.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:05:01] "GET /static/vendors/Chart.js/dist/Chart.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:05:01] "GET /static/vendors/gauge.js/dist/gauge.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:05:01] "GET /static/vendors/Flot/jquery.flot.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:05:01] "GET /static/vendors/Flot/jquery.flot.pie.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:05:01] "GET /static/vendors/skycons/skycons.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:05:01] "GET /static/vendors/Flot/jquery.flot.time.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:05:07] "GET /static/images/user.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:05:07] "GET /static/images/picture.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:05:07] "GET /static/images/img.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:05:07] "GET /static/vendors/font-awesome/fonts/fontawesome-webfont.woff?v=4.6.3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:05:07] "GET /static/vendors/bootstrap/dist/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:05:20] "GET /static/vendors/font-awesome/fonts/fontawesome-webfont.ttf?v=4.6.3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:05:20] "GET /static/vendors/fastclick/lib/fastclick.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:05:30] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:05:30] "GET /login HTTP/1.1" 200 -
+ERROR:werkzeug:Error on request:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/werkzeug/serving.py", line 303, in run_wsgi
+    execute(self.server.app)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/werkzeug/serving.py", line 294, in execute
+    write(data)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/werkzeug/serving.py", line 272, in write
+    self.end_headers()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/server.py", line 528, in end_headers
+    self.flush_headers()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/server.py", line 532, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socketserver.py", line 799, in write
+    self._sock.sendall(b)
+OSError: [Errno 41] Protocol wrong type for socket
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:05:31] "GET /static/vendors/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:05:31] "GET /static/vendors/bootstrap/dist/css/bootstrap.min.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:05:31] "GET /static/vendors/nprogress/nprogress.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:05:31] "GET /static/vendors/bootstrap-daterangepicker/daterangepicker.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:05:31] "GET /static/vendors/iCheck/skins/flat/green.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:05:31] "GET /static/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:05:31] "GET /static/build/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:05:31] "GET /static/vendors/jquery/dist/jquery.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:05:31] "GET /static/vendors/jqvmap/dist/jqvmap.min.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:05:31] "GET /static/vendors/alertifyjs/alertify.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:05:31] "GET /static/vendors/parsleyjs/dist/parsley.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:05:31] "GET /static/vendors/alertifyjs/css/alertify.min.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:05:31] "GET /static/vendors/animate.css/animate.min.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:05:31] "GET /static/build/js/login.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:05:31] "GET /static/vendors/alertifyjs/css/custom.alertify.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2019 15:15:46] "POST /api/createuser HTTP/1.1" 404 -
