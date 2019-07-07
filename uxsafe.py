@@ -1,3 +1,6 @@
 from app import create_app
+from flask_migrate import Migrate
 
-create_app()
+app = create_app()
+
+Migrate(app)
