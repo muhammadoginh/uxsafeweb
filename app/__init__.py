@@ -26,5 +26,5 @@ def create_app():
     app = Flask(__name__, static_folder='layout/static')
     register_extensions(app)
     register_blueprints(app)
-    configure_logs(app)
+#     configure_logs(app)
     return app
